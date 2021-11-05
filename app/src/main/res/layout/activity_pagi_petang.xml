@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".Activity.DzikirPagiActivity">
+    tools:context=".Activity.PagiPetangDzikirActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rv_dzikir_pagi"
-        android:background="@drawable/bg_rv_dzikir_pagi"
-        android:padding="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
