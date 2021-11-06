@@ -15,6 +15,7 @@
     <string name="content_txt_icon_image_for_background_dzikir">content txt icon image for background dzikir</string>
     <string name="content_txt_icon_btn_dzikir_pagi">content txt icon btn dzikir pagi</string>
     <string name="content_txt_icon_btn_dzikir_petang">content txt icon btn dzikir petang</string>
+    <string name="image_poster_detail_artikel">Image Poster Detail Artikel</string>
 
     <string-array name="arr_img_artikel">
         <item>@drawable/artikel_1</item>
@@ -114,4 +115,6 @@
         <item>\"Semoga Allah membalasmu dengan kebaikan.\"</item>
         <item>\"Aku berlindung kepada Allah dari godaan syaitan yang terkutuk.\"</item>
     </string-array>
+
+
 </resources>

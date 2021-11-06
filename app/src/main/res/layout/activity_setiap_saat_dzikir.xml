@@ -8,7 +8,7 @@
     tools:context=".Activity.SetiapSaatDzikirActivity">
 
     <TextView
-        android:id="@+id/tv_txt_qauliyah"
+        android:id="@+id/tv_txt_setiap_saat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -18,14 +18,14 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingBottom="16dp"
-        android:text="@string/txt_sunnah_qauliyah"
+        android:text="@string/txt_dzikir_setiap_saat"
         android:textColor="@color/blue"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_qauliyah_sholat"
+        android:id="@+id/rv_dzikir_setiap_saat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_txt_qauliyah" />
+        android:layout_below="@id/tv_txt_setiap_saat" />
 </RelativeLayout>
