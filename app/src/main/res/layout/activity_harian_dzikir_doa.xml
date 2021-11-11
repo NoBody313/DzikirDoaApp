@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.HarianDzikirDoaActivity">
+    tools:context=".activity.HarianDzikirDoaActivity">
 
     <TextView
         android:id="@+id/tv_dzikir_doa_harian"

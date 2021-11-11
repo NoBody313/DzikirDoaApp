@@ -11,39 +11,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DzikirDoaApp">
         <activity
-            android:name=".Activity.DzikirPetangActivity"
+            android:name=".activity.DzikirPetangActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/PetangActivity"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activity.DzikirPagiActivity"
+            android:name=".activity.DzikirPagiActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/PagiActivity"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activity.DetailArtikelActivity"
+            android:name=".activity.DetailArtikelActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activity.PagiPetangDzikirActivity"
+            android:name=".activity.PagiPetangDzikirActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activity.HarianDzikirDoaActivity"
+            android:name=".activity.HarianDzikirDoaActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activity.SetiapSaatDzikirActivity"
+            android:name=".activity.SetiapSaatDzikirActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activity.QauliyahSholatActivity"
+            android:name=".activity.QauliyahSholatActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
@@ -63,7 +63,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/NoActionBar" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

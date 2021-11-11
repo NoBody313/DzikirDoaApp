@@ -1,16 +1,18 @@
 package com.example.dzikirdoaapp
 
 import android.content.Intent
-import android.icu.text.Transliterator
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
-import com.example.dzikirdoaapp.Activity.QauliyahSholatActivity
-import com.example.dzikirdoaapp.Adapter.ArtikelAdapter
+import com.example.dzikirdoaapp.activity.HarianDzikirDoaActivity
+import com.example.dzikirdoaapp.activity.PagiPetangDzikirActivity
+import com.example.dzikirdoaapp.activity.QauliyahSholatActivity
+import com.example.dzikirdoaapp.activity.SetiapSaatDzikirActivity
+import com.example.dzikirdoaapp.adapter.ArtikelAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,9 +74,6 @@ class MainActivity : AppCompatActivity() {
                 applicationContext, R.drawable.dot_active
             )
         )
-        val vpArtikel: ViewPager2 = findViewById(R.id.vp_artikel)
-        vpArtikel.adapter = ArtikelAdapter(listArtikel)
-        vpArtikel.registerOnPageChangeCallback(slidingCallBack)
     }
 
     private fun initData() {
@@ -100,24 +99,29 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, QauliyahSholatActivity::class.java))
         }
 
-        val llDzikirSetiapSaat: LinearLayout = findViewById(R.id.ll_dzikir_setiap_saat)
+        val llDzikirSetiapSaat = findViewById<LinearLayout>(R.id.ll_dzikir_setiap_saat)
         llDzikirSetiapSaat.setOnClickListener {
-            startActivity(Intent(this, QauliyahSholatActivity::class.java))
+            startActivity(Intent(this, SetiapSaatDzikirActivity::class.java))
         }
 
         val llDzikirDoaHarian: LinearLayout = findViewById(R.id.ll_dzikir_doa_harian)
         llDzikirDoaHarian.setOnClickListener {
-            startActivity(Intent(this, QauliyahSholatActivity::class.java))
+            startActivity(Intent(this, HarianDzikirDoaActivity::class.java))
         }
 
         val llDzikirPagiPetang: LinearLayout = findViewById(R.id.ll_dzikir_pagi_petang)
         llDzikirPagiPetang.setOnClickListener {
-            startActivity(Intent(this, QauliyahSholatActivity::class.java))
+            startActivity(Intent(this, PagiPetangDzikirActivity::class.java))
 
         }
 
         val vpArtikel: ViewPager2 = findViewById(R.id.vp_artikel)
         vpArtikel.adapter = ArtikelAdapter(listArtikel)
         vpArtikel.registerOnPageChangeCallback(slidingCallBack)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        vpArtikel.unregisterOnPageChangeCallback(slidingCallBack)
     }
 }
