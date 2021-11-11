@@ -168,12 +168,12 @@ object DataDzikirDoa {
         get() {
             val list = arrayListOf<DzikirDoa>()
             for (data in descDzikirPagi.indices) {
-                val dzikir_pagi = DzikirDoa(
+                val dzikirPagi = DzikirDoa(
                     descDzikirPagi[data],
                     lafazDzikirPagi[data],
                     terjemahDzikirPagi[data]
                 )
-                list.add(dzikir_pagi)
+                list.add(dzikirPagi)
             }
             return list
         }
@@ -244,13 +244,13 @@ object DataDzikirDoa {
     val listDzikirPetang: ArrayList<DzikirDoa>
         get() {
             val list = arrayListOf<DzikirDoa>()
-            for (data in descDzikirPagi.indices) {
-                val dzikir_petang = DzikirDoa(
+            for (data in descDzikirPetang.indices) {
+                val dzikirPetang = DzikirDoa(
                     descDzikirPetang[data],
                     lafazDzikirPetang[data],
                     terjemahDzikirPetang[data]
                 )
-                list.add(dzikir_petang)
+                list.add(dzikirPetang)
             }
             return list
         }
